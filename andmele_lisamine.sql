@@ -51,12 +51,44 @@ Values('A15','GreatViewRoom','Occupied',1,1)
 <-------------------------------------------------->
 
 <--------------Таблица-occupied_room--------------->
+INSERT INTO occupied_room(check_in,check_out,room_id,reservation_id)
+VALUES('2022-02-09','2023-11-11',1,1)
+INSERT INTO occupied_room(check_in,check_out,room_id,reservation_id)
+VALUES('2023-02-09','2023-10-11',2,2)
+INSERT INTO occupied_room(check_in,check_out,room_id,reservation_id)
+VALUES('2020-02-09','2023-02-11',3,3)
+INSERT INTO occupied_room(check_in,check_out,room_id,reservation_id)
+VALUES('2019-03-09','2020-02-11',4,4)
+INSERT INTO occupied_room(check_in,check_out,room_id,reservation_id)
+VALUES('2018-03-09','2022-02-11',5,5)
 
+<-------------------------------------------------->
 
+<--------------Таблица-reserved_room--------------->
+INSERT INTO reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+Values(2,1,1,'Occupied')
+INSERT INTO reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+Values(3,2,4,'Occupied')
+INSERT INTO reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+Values(1,3,3,'Occupied')
+INSERT INTO reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+Values(4,2,2,'Occupied')
+INSERT INTO reserved_room(number_of_rooms,room_type_id,reservation_id,status)
+Values(1,1,5,'Occupied')
+<-------------------------------------------------->
 
-
-
-
+<--------------Таблица-hosted_at------------------->
+INSERT INTO hosted_at(guest_id,occupied_room_id)
+VALUES(1,1)
+INSERT INTO hosted_at(guest_id,occupied_room_id)
+VALUES(2,2)
+INSERT INTO hosted_at(guest_id,occupied_room_id)
+VALUES(3,3)
+INSERT INTO hosted_at(guest_id,occupied_room_id)
+VALUES(4,4)
+INSERT INTO hosted_at(guest_id,occupied_room_id)
+VALUES(5,5)
+<-------------------------------------------------->
 
 
 
