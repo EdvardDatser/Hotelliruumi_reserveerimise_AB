@@ -46,7 +46,7 @@ foreign key (room_type_id) REFERENCES room_type(id)
 
 CREATE TABLE occupied_room(
 id int primary key identity(1,1),
-check_in timestamp,
+check_in datetime,
 check_out datetime,
 room_id int,
 reservation_id int,
