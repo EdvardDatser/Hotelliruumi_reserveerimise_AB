@@ -54,7 +54,7 @@ END
 
 SELECT dbo.fn_GetEmployeeName(1) as Answer
 
---Третий файл
+--ajutisedTabelid
 
 CREATE TABLE #PersonDetails(
 Id int,
@@ -83,7 +83,7 @@ End
 
 CREATE TABLE ##Employeedetails(Id int, Name nvarchar(20))
 
---ajutisedTabelid
+--IndeksidServeris
 
 SELECT * FROM DimEmployee where SickLeaveHours>30 and SickLeaveHours<60
 
@@ -92,8 +92,6 @@ ON DimEmployee(SickLeaveHours ASC)
 
 Drop index DimEmployee.NameIndex
 
-
---IndeksidServeris
 
 CREATE TABLE [tblEmployee]
 (
