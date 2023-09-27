@@ -1,3 +1,5 @@
+--DDL TRIGGERS
+
 CREATE TRIGGER trMyFirstTrigger
 ON Database
 FOR CREATE_TABLE
@@ -41,7 +43,7 @@ END
 
 sp_rename 'TestTable','NewTestTable'
 
--- Начало файла 93
+-- Server-Scoped DDL TRIGGERS
 
 
 CREATE TRIGGER tr_DatabaseScopeTrigger
@@ -68,7 +70,7 @@ ENABLE TRIGGER tr_ServerScopteTrigger ON ALL SERVER
 
 DROP TRIGGER tr_ServerScopteTrigger ON ALL SERVER
 
---Начало файла 94
+--SQL serveri trigeri täitmise järjekord
 
 
 CREATE TRIGGER tr_DatabaseScopeTrigger
@@ -98,7 +100,7 @@ EXEC sp_settriggerorder
 @namespace='DATABASE'
 GO
 
---Начало файла 96
+--Logon trigger SQL serveris
 
 CREATE TRIGGER tr_LogonAuditTriggers
 ON ALL SERVER
