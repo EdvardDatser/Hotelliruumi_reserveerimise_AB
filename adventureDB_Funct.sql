@@ -1,4 +1,4 @@
--- Первый факл
+-- Funct 33.
 
 CREATE FUNCTION fn_DimEmployee()
 
@@ -23,7 +23,7 @@ SELECT * FROM fn_IDC_DimEmployee()
 
 Update fn_DimEmployee() set FirstName = 'Edvard' Where EmployeeKey = 1;
 
--- Второй файл
+-- Funct 34
 
 CREATE FUNCTION fn_GetEmployeeName(@Id int)
 RETURNS nvarchar(20)
@@ -83,7 +83,7 @@ End
 
 CREATE TABLE ##Employeedetails(Id int, Name nvarchar(20))
 
---Четвертый файл
+--ajutisedTabelid
 
 SELECT * FROM DimEmployee where SickLeaveHours>30 and SickLeaveHours<60
 
@@ -93,7 +93,7 @@ ON DimEmployee(SickLeaveHours ASC)
 Drop index DimEmployee.NameIndex
 
 
---Пятый файл
+--IndeksidServeris
 
 CREATE TABLE [tblEmployee]
 (
